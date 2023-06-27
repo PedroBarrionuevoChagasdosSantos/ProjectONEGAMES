@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectonegames.Controller.MaisBaixadosController">
+   <children>
+      <TableView fx:id="tabelaMaisBaixados" layoutY="44.0" prefHeight="310.0" prefWidth="601.0">
+        <columns>
+          <TableColumn fx:id="colunaCategoria" prefWidth="114.0" text="Categoria" />
+          <TableColumn fx:id="colunaNome" prefWidth="309.0" text="Nome" />
+            <TableColumn fx:id="colunaClassificação" prefWidth="157.0" text="Quantidade baixados" />
+        </columns>
+      </TableView>
+      <Label layoutY="-1.0" prefHeight="31.0" prefWidth="601.0" style="-fx-background-color: #b20000;" textFill="#b20000" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0" />
+      <Button layoutX="529.0" layoutY="363.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #ffffff;" text="Voltar" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="19.0" />
+   </children>
+</AnchorPane>
