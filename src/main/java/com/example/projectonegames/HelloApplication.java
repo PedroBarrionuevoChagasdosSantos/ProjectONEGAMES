@@ -11,6 +11,7 @@ import javafx.stage.Window;
 import java.io.IOException;
 //OLA GALERAAA
 // Olá
+//
 
 public class HelloApplication extends Application {
     private static Scene scene;
