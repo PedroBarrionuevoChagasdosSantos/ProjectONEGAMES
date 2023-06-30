@@ -11,7 +11,7 @@ public class JogosDAO {
 
     public List<Jogos> getAll() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select nomeJogo, qtdjogados from jogos ORDER BY qtdjogados DESC;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select qtdjogados, nomeJogo, nomecategoria  from jogos, categoria ORDER BY qtdjogados DESC;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
 
             List<Jogos> jogos = new ArrayList<Jogos>();
@@ -19,7 +19,8 @@ public class JogosDAO {
                 Jogos jogos2 = new Jogos();
                 jogos2.nome = resultSet.getString(1);
                 jogos2.categoria = resultSet.getString(2);
-                // produto.preco = resultSet.getInt(3);
+                jogos2.classificação = resultSet.getInt(3);
+
                 jogos.add(jogos2);
             }
             return jogos;
