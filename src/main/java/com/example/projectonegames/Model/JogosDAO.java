@@ -24,6 +24,7 @@ public class JogosDAO {
             }
             return jogosmaisjogados;
         } catch (SQLException e) {
+
             throw new RuntimeException(e);
         }
     }
