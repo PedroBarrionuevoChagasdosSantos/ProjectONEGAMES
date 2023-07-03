@@ -1,7 +1,6 @@
 package com.example.projectonegames.Model;
 
 import com.example.projectonegames.ConnectionSingleton;
-import com.example.projectonegames.Model.Jogos;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -14,16 +13,16 @@ public class JogosDAO {
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select qtdjogados, nomeJogo, nomecategoria  from jogos, categoria ORDER BY qtdjogados DESC;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
 
-            List<Jogos> jogos = new ArrayList<Jogos>();
+            List<Jogos> jogosmaisjogados = new ArrayList<Jogos>();
             while (resultSet.next()) {
-                Jogos jogos2 = new Jogos();
-                jogos2.nome = resultSet.getString(1);
-                jogos2.categoria = resultSet.getString(2);
-                jogos2.classificação = resultSet.getInt(3);
+                Jogos jogosmaisjogados1 = new Jogos();
+                jogosmaisjogados1.nome = resultSet.getString(1);
+                jogosmaisjogados1.categoria = resultSet.getString(2);
+                jogosmaisjogados1.classificação = resultSet.getInt(3);
 
-                jogos.add(jogos2);
+                jogosmaisjogados.add(jogosmaisjogados1);
             }
-            return jogos;
+            return jogosmaisjogados;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
