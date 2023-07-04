@@ -10,12 +10,12 @@
    <children>
       <TableView fx:id="tabelaJogosmaisjogados" layoutY="48.0" prefHeight="304.0" prefWidth="652.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <columns>
-          <TableColumn fx:id="colunaClassificação" prefWidth="176.0" text="Classificação" />
+          <TableColumn fx:id="colunaClassificação" prefWidth="176.0" text="Quantidades jogados" />
           <TableColumn fx:id="colunaNome" prefWidth="266.0" text="Nome" />
             <TableColumn fx:id="colunaCategoria" prefWidth="195.0" text="Categoria" />
         </columns>
       </TableView>
-      <Label layoutY="-1.0" prefHeight="25.0" prefWidth="652.0" style="-fx-background-color: #b20000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0" />
+      <Label layoutY="-1.0" prefHeight="35.0" prefWidth="627.0" style="-fx-background-color: #b20000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0" />
       <Button layoutX="586.0" layoutY="363.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #ffffff;" text="Voltar" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="13.0" />
    </children>
 </AnchorPane>

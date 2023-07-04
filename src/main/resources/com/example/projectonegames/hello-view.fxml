@@ -18,7 +18,7 @@
             <Font size="15.0" />
          </font>
       </TextField>
-      <PasswordField fx:id="senhafield" layoutX="353.0" layoutY="408.0" prefHeight="31.0" prefWidth="246.0" promptText="Senha">
+      <PasswordField fx:id="senhafield" layoutX="354.0" layoutY="418.0" prefHeight="31.0" prefWidth="246.0" promptText="Senha">
          <font>
             <Font size="15.0" />
          </font>
@@ -41,5 +41,10 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <Label layoutX="353.0" layoutY="336.0" prefHeight="17.0" prefWidth="102.0" text="Insira seu usuario:" textFill="WHITE" />
+      <Label layoutX="353.0" layoutY="401.0" prefHeight="17.0" prefWidth="102.0" text="Insira sua senha:" textFill="WHITE" />
+      <Label layoutX="452.0" layoutY="336.0" prefHeight="17.0" prefWidth="18.0" text="*" textFill="#eb0000" />
+      <Label layoutX="443.0" layoutY="401.0" prefHeight="17.0" prefWidth="18.0" text="*" textFill="#eb0000" />
+      <Button layoutX="842.0" layoutY="27.0" mnemonicParsing="false" onAction="#criarlogin" prefHeight="31.0" prefWidth="77.0" text="Criar login" />
    </children>
 </AnchorPane>

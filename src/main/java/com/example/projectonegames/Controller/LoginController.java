@@ -23,8 +23,8 @@ public class LoginController {
     @FXML
     public void entrar() throws IOException, SQLException {
         //parte que verefica o usuario e senha...
-        Usuario usuariologin  = new Usuario();
-        usuariologin.usuario =  usuariofield.getText();
+        Usuario usuariologin = new Usuario();
+        usuariologin.usuario = usuariofield.getText();
         usuariologin.senha = senhafield.getText();
         boolean usuarioexiste = new UsuarioDAO().existe(usuariologin);
 
@@ -40,4 +40,9 @@ public class LoginController {
         }
 
     }
+
+    @FXML
+    public void criarlogin() throws IOException{
+        HelloApplication.setRoot("novousuario-modal-view");
     }
+}

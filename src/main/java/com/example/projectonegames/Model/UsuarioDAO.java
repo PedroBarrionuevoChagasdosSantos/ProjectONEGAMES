@@ -34,7 +34,7 @@ public class UsuarioDAO {
 
     public boolean novousuario(Usuario novousuario) throws SQLException, IOException {
 
-        String sql = "insert into tbcliente(Usuario, Senha) values (?,?);";
+        String sql = "insert into usuario(Usuario, Senha) values (?,?);";
 
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);){
             preparedStatement.setString(1, novousuario.usuario);
