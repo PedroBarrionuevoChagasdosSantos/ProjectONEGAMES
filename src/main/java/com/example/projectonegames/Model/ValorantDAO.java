@@ -11,7 +11,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ValorantDAO {
+public class
+ValorantDAO {
 
     public List<Jogos> getAll() throws SQLException {
 

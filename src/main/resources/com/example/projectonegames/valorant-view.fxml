@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectonegames.Controller.VALORANTController">
+<AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectonegames.Controller.ValorantController">
    <children>
       <Label prefHeight="51.0" prefWidth="951.0" style="-fx-background-color: #b90000;" textFill="#c60000" />
       <Label layoutY="549.0" prefHeight="51.0" prefWidth="951.0" style="-fx-background-color: #b90000;" textFill="#c60000" />
@@ -18,8 +18,9 @@
       </Button>
       <TableView layoutX="17.0" layoutY="60.0" prefHeight="481.0" prefWidth="917.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn prefWidth="175.0" text="Titulo" />
+          <TableColumn prefWidth="590.0" text="Texto" />
+            <TableColumn prefWidth="151.0" text="Data" />
         </columns>
       </TableView>
    </children>

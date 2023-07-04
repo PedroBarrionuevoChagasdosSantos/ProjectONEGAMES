@@ -24,34 +24,31 @@ public class ValorantController implements Initializable {
     TableView<Jogos> tabelaValorant;
 
     @FXML
-    TableColumn<Jogos, Integer> colunaCategoria;
+    TableColumn<Jogos, String> colunaTitulo;
 
     @FXML
-    TableColumn<Jogos, String> colunaNome;
+    TableColumn<Jogos, String> colunaTexto;
 
     @FXML
-    TableColumn<Jogos, Double> colunaClassificação;
+    TableColumn<Jogos, Double> colunaData;
 
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        colunaCategoria.setCellValueFactory(new PropertyValueFactory<>("Categoria"));
-        colunaNome.setCellValueFactory(new PropertyValueFactory<>("Nome"));
-        colunaClassificação.setCellValueFactory(new PropertyValueFactory<>("Classificação"));
+        colunaTitulo.setCellValueFactory(new PropertyValueFactory<>("Titulo"));
+        colunaTexto.setCellValueFactory(new PropertyValueFactory<>("Texto"));
+        colunaData.setCellValueFactory(new PropertyValueFactory<>("Data"));
 
         ValorantDAO valorantDAO = new ValorantDAO();
         try {
-            List<Jogos> produtos = valorantDAO.getAll();
-            tabelaValorant.getItems().addAll(produtos);
+            List<Jogos> jogosvalorant = valorantDAO.getAll();
+            tabelaValorant.getItems().addAll(jogosvalorant);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
-
-
-    public class VALORANTController {
 
         @FXML
         public void Voltar() throws IOException {
@@ -59,6 +56,5 @@ public class ValorantController implements Initializable {
             HelloApplication.setRoot("home-view");
         }
     }
-}
 
 
