@@ -1,6 +1,5 @@
 package com.example.projectonegames.Controller;
 
-import com.example.projectonegames.ConnectionSingleton;
 import com.example.projectonegames.HelloApplication;
 import com.example.projectonegames.Model.Jogos;
 import com.example.projectonegames.Model.ValorantDAO;
@@ -13,7 +12,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -37,13 +35,13 @@ public class ValorantController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        colunaTitulo.setCellValueFactory(new PropertyValueFactory<>("Titulo"));
-        colunaTexto.setCellValueFactory(new PropertyValueFactory<>("Texto"));
-        colunaData.setCellValueFactory(new PropertyValueFactory<>("Data"));
+        colunaTitulo.setCellValueFactory(new PropertyValueFactory<>("titulo"));
+        colunaTexto.setCellValueFactory(new PropertyValueFactory<>("texto"));
+        colunaData.setCellValueFactory(new PropertyValueFactory<>("data"));
 
         ValorantDAO valorantDAO = new ValorantDAO();
         try {
-            List<Jogos> jogosvalorant = valorantDAO.getAll();
+            List<Jogos> jogosvalorant = valorantDAO.Valorant();
             tabelaValorant.getItems().addAll(jogosvalorant);
         } catch (SQLException e) {
             throw new RuntimeException(e);

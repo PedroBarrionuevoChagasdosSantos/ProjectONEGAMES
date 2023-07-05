@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectonegames.Controller.CSGOController">
+   <children>
+      <Label prefHeight="43.0" prefWidth="956.0" style="-fx-background-color: #c60000;" />
+      <Label layoutY="551.0" prefHeight="49.0" prefWidth="956.0" style="-fx-background-color: #c60000;" />
+      <WebView layoutY="69.0" prefHeight="464.0" prefWidth="957.0" />
+   </children>
+</AnchorPane>

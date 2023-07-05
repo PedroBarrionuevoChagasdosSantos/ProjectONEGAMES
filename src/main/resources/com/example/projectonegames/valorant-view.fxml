@@ -16,11 +16,11 @@
             <Font name="Arial Rounded MT Bold" size="14.0" />
          </font>
       </Button>
-      <TableView layoutX="17.0" layoutY="60.0" prefHeight="481.0" prefWidth="917.0">
+      <TableView fx:id="tabelaValorant" layoutX="17.0" layoutY="60.0" prefHeight="481.0" prefWidth="917.0">
         <columns>
-          <TableColumn prefWidth="175.0" text="Titulo" />
-          <TableColumn prefWidth="590.0" text="Texto" />
-            <TableColumn prefWidth="151.0" text="Data" />
+          <TableColumn fx:id="colunaTitulo" prefWidth="195.0" text="Titulo" />
+          <TableColumn fx:id="colunaTexto" prefWidth="548.0" text="Texto" />
+            <TableColumn fx:id="colunaData" prefWidth="173.0" text="Data" />
         </columns>
       </TableView>
    </children>

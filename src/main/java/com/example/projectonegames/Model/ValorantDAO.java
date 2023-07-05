@@ -11,10 +11,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class
-ValorantDAO {
+public class ValorantDAO {
 
-    public List<Jogos> getAll() throws SQLException {
+    public List<Jogos> Valorant() throws SQLException {
 
         try(PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo AS titulo, Texto AS Texto, Autor AS Autor from noticias order by Jogos_Jogos_id ASC;");
             ResultSet resultSet = preparedStatement.executeQuery()){
