@@ -6,6 +6,8 @@ public class Jogos {
 
     public int classificação;
 
+    public int mediaavaliacoes;
+
     public String nome;
 
     public String categoria;
@@ -24,6 +26,14 @@ public class Jogos {
 
 
 
+    public Integer getmediaavaliacoes() {
+        return mediaavaliacoes;
+    }
+
+    public void setmediaavaliacoes(Integer mediaavaliacoes) {
+        this.mediaavaliacoes = mediaavaliacoes;
+    }
+
 
 
     public String getTitulo() {
@@ -34,6 +44,8 @@ public class Jogos {
         this.titulo = titulo;
     }
 
+
+
     public String getTexto() {
         return texto;
     }
@@ -41,6 +53,8 @@ public class Jogos {
     public void setTexto(String texto) {
         this.texto = texto;
     }
+
+
 
     public Date getData() {
         return data;
@@ -50,6 +64,8 @@ public class Jogos {
         this.data = data;
     }
 
+
+
     public String getAutor() {
         return autor;
     }
@@ -57,6 +73,8 @@ public class Jogos {
     public void setAutor(String autor) {
         this.autor = autor;
     }
+
+
 
     public String getCategoria() {
         return categoria;
@@ -68,6 +86,7 @@ public class Jogos {
 
 
 
+
         public int getClassificação() {
             return classificação;
         }
@@ -75,6 +94,7 @@ public class Jogos {
         public void setClassificação(int classificação) {
             this.classificação = classificação;
         }
+
 
 
 

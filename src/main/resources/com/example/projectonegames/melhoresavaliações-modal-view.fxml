@@ -10,9 +10,9 @@
    <children>
       <TableView fx:id="tabelaMelhoresAvaliações" layoutY="50.0" prefHeight="300.0" prefWidth="600.0">
         <columns>
-          <TableColumn fx:id="colunaClassificação" prefWidth="139.0" text="Classificação" />
+          <TableColumn fx:id="colunamediaavaliacao" prefWidth="139.0" text="Media de avaliações" />
           <TableColumn fx:id="colunaNome" prefWidth="312.0" text="Nome" />
-            <TableColumn fx:id="colunaCategoria" prefWidth="128.0" text="Categoria" />
+            <TableColumn fx:id="colunaCategoria" prefWidth="148.0" text="Categoria" />
         </columns>
       </TableView>
       <Label layoutY="-2.0" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: #b20000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0" />

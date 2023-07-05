@@ -20,7 +20,7 @@ public class MelhoresAvaliaçõesModalController implements Initializable {
     TableView<Jogos> tabelaMelhoresAvaliações;
 
     @FXML
-    TableColumn<Jogos, String> colunaClassificação;
+    TableColumn<Jogos, Integer> colunamediaavaliacao;
 
     @FXML
     TableColumn<Jogos, String> colunaNome;
@@ -31,13 +31,13 @@ public class MelhoresAvaliaçõesModalController implements Initializable {
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        colunaClassificação.setCellValueFactory(new PropertyValueFactory<>("Classificação"));
-        colunaNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
-        colunaCategoria.setCellValueFactory(new PropertyValueFactory<>("categoria"));
+        colunamediaavaliacao.setCellValueFactory(new PropertyValueFactory<>("mediaavaliacao"));
+        colunaNome.setCellValueFactory(new PropertyValueFactory<>("Nome"));
+        colunaCategoria.setCellValueFactory(new PropertyValueFactory<>("Categoria"));
 
         JogosDAO jogosDAO = new JogosDAO();
         try {
-            List<Jogos> jogos = jogosDAO.getAll();
+            List<Jogos> jogos = jogosDAO.melhoresavaliacoes();
             tabelaMelhoresAvaliações.getItems().addAll(jogos);
         }
         catch (SQLException e) {
