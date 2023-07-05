@@ -31,7 +31,7 @@ public class MelhoresAvaliaçõesModalController implements Initializable {
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        colunamediaavaliacao.setCellValueFactory(new PropertyValueFactory<>("mediaavaliacao"));
+        colunamediaavaliacao.setCellValueFactory(new PropertyValueFactory<>("mediaavaliacoes"));
         colunaNome.setCellValueFactory(new PropertyValueFactory<>("Nome"));
         colunaCategoria.setCellValueFactory(new PropertyValueFactory<>("Categoria"));
 

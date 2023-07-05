@@ -8,6 +8,9 @@ public class Jogos {
 
     public int mediaavaliacoes;
 
+    public int maisbaixados;
+
+
     public String nome;
 
     public String categoria;
@@ -26,13 +29,28 @@ public class Jogos {
 
 
 
-    public Integer getmediaavaliacoes() {
+
+
+    public int getMaisbaixados() {
+        return maisbaixados;
+    }
+
+    public void setMaisbaixados(int maisbaixados) {
+        this.maisbaixados = maisbaixados;
+    }
+
+
+
+
+    public int getMediaavaliacoes() {
         return mediaavaliacoes;
     }
 
-    public void setmediaavaliacoes(Integer mediaavaliacoes) {
+    public void setMediaavaliacoes(int mediaavaliacoes) {
         this.mediaavaliacoes = mediaavaliacoes;
     }
+
+
 
 
 

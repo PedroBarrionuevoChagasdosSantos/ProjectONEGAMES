@@ -55,6 +55,31 @@ public class JogosDAO {
             throw new RuntimeException(e);
         }
     }
+
+    public List<Jogos> maisbaixados() throws SQLException {
+
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select qtdbaixados ,nomeJogo, nomecategoria from jogos\n" +
+                "left join categoria on jogos.Categoria_categoria_id = categoria.categoria_id \n" +
+                "order by qtdbaixados desc;");
+
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+
+            List<Jogos> maisbaixados = new ArrayList<Jogos>();
+            while (resultSet.next()) {
+                Jogos maisbaixados1 = new Jogos();
+                maisbaixados1.maisbaixados = resultSet.getInt(1);
+                maisbaixados1.nome = resultSet.getString(2);
+                maisbaixados1.categoria = resultSet.getString(3);
+
+                maisbaixados.add(maisbaixados1);
+            }
+            return maisbaixados;
+        } catch (SQLException e) {
+
+            throw new RuntimeException(e);
+        }
+    }
+
     }
 
 
