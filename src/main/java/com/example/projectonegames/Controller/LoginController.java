@@ -43,6 +43,6 @@ public class LoginController {
 
     @FXML
     public void criarlogin() throws IOException{
-        HelloApplication.setRoot("novousuario-modal-view");
+        HelloApplication.showModal("novousuario-modal-view");
     }
 }

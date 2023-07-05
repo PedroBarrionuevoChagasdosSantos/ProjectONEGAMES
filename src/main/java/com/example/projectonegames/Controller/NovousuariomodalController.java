@@ -1,20 +1,13 @@
 package com.example.projectonegames.Controller;
 
-import com.example.projectonegames.Model.Jogos;
-import com.example.projectonegames.Model.JogosDAO;
-import com.example.projectonegames.Model.Usuario;
-import com.example.projectonegames.Model.UsuarioDAO;
+import com.example.projectonegames.HelloApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.sql.SQLException;
-import java.util.List;
 import java.util.ResourceBundle;
 
     public class  NovousuariomodalController implements Initializable {
@@ -23,9 +16,18 @@ import java.util.ResourceBundle;
         TextField usuariofield;
         @FXML
         PasswordField senhafield;
+        @FXML
+        Label labeljaexiste;
+
+
+        @FXML
+        public void Cancelar() {
+            HelloApplication.closeCurrentWindow();
+        }
 
         public void initialize(URL url, ResourceBundle resourceBundle) {
 
 
         }
+
 }
