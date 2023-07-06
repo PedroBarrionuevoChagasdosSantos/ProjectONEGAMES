@@ -14,26 +14,19 @@ import java.util.List;
 public class ValorantDAO {
     public List<Jogos> Valorant() throws SQLException {
 
-        try(PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo AS Titulo, Texto AS Texto, Data AS Data from noticias order by Jogos_Jogos_id ASC;");
-            ResultSet resultSet = preparedStatement.executeQuery()){
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo AS Titulo, Texto AS Texto, Data AS Data from noticias order by Jogos_Jogos_id ASC;");
+             ResultSet resultSet = preparedStatement.executeQuery()) {
 
 
-//            List<Jogos> jogos = new ArrayList<>();
-//            while (resultSet.next()){
-//                Jogos jogo = new Jogos();
-//                jogo.classificação = resultSet.getInt(1);
-//                jogo.nome = resultSet.getString(2);
-//                jogo.categoria = resultSet.getString(3);
-//                jogos.add(jogo);
+            List<Jogos> jogos = new ArrayList<>();
+            while (resultSet.next()) {
+                Jogos jogo = new Jogos();
+                jogo.classificação = resultSet.getInt(1);
+                jogo.nome = resultSet.getString(2);
+                jogo.categoria = resultSet.getString(3);
+                jogos.add(jogo);
             }
             return jogos;
         }
-    @FXML
-    public void Voltar() throws IOException {
-
-        HelloApplication.setRoot("home-view");
     }
-
-
-
 }
