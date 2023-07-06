@@ -21,17 +21,17 @@
                <children>
                   <Label layoutX="38.0" layoutY="14.0" prefHeight="27.0" prefWidth="190.0" text="Titulo">
                      <font>
-                        <Font size="18.0" />
+                        <Font size="22.0" />
                      </font>
                   </Label>
                   <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="38.0" layoutY="75.0" prefHeight="216.0" prefWidth="762.0" text="Texto">
                      <font>
-                        <Font size="18.0" />
+                        <Font size="16.0" />
                      </font>
                   </Label>
                   <Label layoutX="38.0" layoutY="301.0" prefHeight="27.0" prefWidth="190.0" text="Data">
                      <font>
-                        <Font size="18.0" />
+                        <Font size="14.0" />
                      </font>
                   </Label>
                </children>
