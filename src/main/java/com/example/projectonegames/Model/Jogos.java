@@ -5,26 +5,19 @@ import java.util.Date;
 public class Jogos {
 
     public int classificação;
-
     public int mediaavaliacoes;
-
     public int maisbaixados;
 
 
-    public String nome;
 
+    public String nome;
     public String categoria;
 
 
 
-
-
     public String titulo;
-
     public String texto;
-
     public String autor;
-
     public Date data;
 
 

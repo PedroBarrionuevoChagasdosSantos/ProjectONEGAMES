@@ -1,23 +1,22 @@
 package com.example.projectonegames.Controller;
 
-import com.example.projectonegames.HelloApplication;
-import com.example.projectonegames.Model.Jogos;
-import com.example.projectonegames.Model.ValorantDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.HBox;
+import javafx.scene.text.TextAlignment;
+import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.net.URL;
-import java.sql.*;
-import java.util.List;
 import java.util.ResourceBundle;
 
+import static javafx.application.Application.launch;
 
-public class ValorantController implements Initializable {
+
+public class ValorantController implements Initializable, ValorantController1 {
     //COLOCAR OS fxml QUE TEM NA TELA DO SCENEBUILDER
 
     @FXML
@@ -30,19 +29,30 @@ public class ValorantController implements Initializable {
     ScrollPane labelData;
 
 
-
-    @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        labelTitulo.();
 
+        public void start (Stage Stage stage;
+        stage){
+            Scene scene = new Scene(new Group());
+            stage.setTitle("Label Sample");
+            stage.setWidth(400);
+            stage.setHeight(180);
 
-    }
+            HBox hbox = new HBox();
 
-        @FXML
-        public void Voltar() throws IOException {
+            Label label1 = new Label("Search long long long long long long long long long ");
+            label1.setPrefWidth(100);
+            label1.setWrapText(true);
 
-            HelloApplication.setRoot("home-view");
+            hbox.setSpacing(10);
+            hbox.getChildren().add((label1));
+            ((Group) scene.getRoot()).getChildren().add(hbox);
+
+            stage.setScene(scene);
+            stage.show();
         }
+
     }
+}
 
 
