@@ -28,7 +28,6 @@ public class ValorantDAO {
             }
             return jogos;
         }
-    }
     @FXML
     public void Voltar() throws IOException {
 
