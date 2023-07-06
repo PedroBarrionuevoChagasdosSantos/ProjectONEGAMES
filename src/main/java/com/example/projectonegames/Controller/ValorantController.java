@@ -5,6 +5,7 @@ import com.example.projectonegames.Model.Jogos;
 import com.example.projectonegames.Model.ValorantDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -18,34 +19,23 @@ import java.util.ResourceBundle;
 
 public class ValorantController implements Initializable {
     //COLOCAR OS fxml QUE TEM NA TELA DO SCENEBUILDER
-    @FXML
-    TableView<Jogos> tabelaValorant;
 
     @FXML
-    TableColumn<Jogos, String> colunaTitulo;
+    ScrollPane labelTitulo;
 
     @FXML
-    TableColumn<Jogos, String> colunaTexto;
+    ScrollPane labelTexto;
 
     @FXML
-    TableColumn<Jogos, Double> colunaData;
+    ScrollPane labelData;
 
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        labelTitulo.();
 
-        colunaTitulo.setCellValueFactory(new PropertyValueFactory<>("titulo"));
-        colunaTexto.setCellValueFactory(new PropertyValueFactory<>("texto"));
-        colunaData.setCellValueFactory(new PropertyValueFactory<>("data"));
 
-        ValorantDAO valorantDAO = new ValorantDAO();
-        try {
-            List<Jogos> jogosvalorant = valorantDAO.Valorant();
-            tabelaValorant.getItems().addAll(jogosvalorant);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
     }
 
         @FXML
