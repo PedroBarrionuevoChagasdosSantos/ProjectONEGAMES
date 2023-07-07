@@ -1,32 +1,20 @@
 package com.example.projectonegames.Model;
 
 import com.example.projectonegames.ConnectionSingleton;
-import com.example.projectonegames.HelloApplication;
-import javafx.fxml.FXML;
-
-import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ValorantDAO {
-    public List<Jogos> Valorant() throws SQLException {
+    public Jogos Valorant() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo AS Titulo, Texto AS Texto, Data AS Data from noticias order by Jogos_Jogos_id ASC;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  1;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
 
-
-            List<Jogos> jogos = new ArrayList<>();
-            while (resultSet.next()) {
-                Jogos jogo = new Jogos();
-                jogo.classificação = resultSet.getInt(1);
-                jogo.nome = resultSet.getString(2);
-                jogo.categoria = resultSet.getString(3);
-                jogos.add(jogo);
-            }
-            return jogos;
         }
+
+        return null;
     }
 }
+
