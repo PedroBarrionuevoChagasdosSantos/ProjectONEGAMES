@@ -14,6 +14,8 @@ import java.util.ResourceBundle;
     public class  NovousuariomodalController implements Initializable {
 
         @FXML
+        TextField codigofield;
+        @FXML
         TextField usuariofield;
         @FXML
         PasswordField senhafield;
@@ -24,6 +26,10 @@ import java.util.ResourceBundle;
         public void cadastrar(){
 
             Usuario novousuario = new Usuario();
+
+            if (!codigofield.getText().isBlank()){
+                novousuario.codigo = Integer.parseInt(codigofield.getText());
+            }
 
             novousuario.usuario = usuariofield.getText();
             novousuario.senha = senhafield.getText();
@@ -47,11 +53,12 @@ import java.util.ResourceBundle;
         }
 
         public void initialize(URL url, ResourceBundle resourceBundle) {
-            Usuario usuarioselecionado = NovousuariomodalController.usuario;
+            Usuario usuariocriado = NovousuariomodalController.usuario;
 
-            if (usuarioselecionado != null){
-                usuariofield.setText(usuarioselecionado.usuario);
-                senhafield.setText(usuarioselecionado.senha);
+            if (usuariocriado != null){
+                codigofield.setText(Integer.toString(usuariocriado.codigo));
+                usuariofield.setText(usuariocriado.usuario);
+                senhafield.setText(usuariocriado.senha);
             }
 
         }

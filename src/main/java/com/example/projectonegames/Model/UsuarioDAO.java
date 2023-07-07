@@ -1,8 +1,6 @@
 package com.example.projectonegames.Model;
 
 import com.example.projectonegames.ConnectionSingleton;
-import com.example.projectonegames.Model.Usuario;
-
 import java.io.IOException;
 import java.sql.*;
 
@@ -32,14 +30,14 @@ public class UsuarioDAO {
         }
     }
 
-    public boolean novousuario(Usuario novousuario) throws SQLException, IOException {
+    public boolean novousuario(Usuario novousuario) throws SQLException {
 
-        String sql = "insert into usuario(Usuario, Senha) values (?,?);";
+        String sql = "insert into usuario( Usuario_id,Nome, Senha) values (?,?,?);";
 
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);){
-            preparedStatement.setString(1, novousuario.usuario);
-            preparedStatement.setString(2, novousuario.senha);
-
+            preparedStatement.setInt(1,novousuario.codigo);
+            preparedStatement.setString(2, novousuario.usuario);
+            preparedStatement.setString(3, novousuario.senha);
 
             try(ResultSet resultado = preparedStatement.executeQuery();){
                 resultado.next();
