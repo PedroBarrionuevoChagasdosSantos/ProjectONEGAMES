@@ -8,38 +8,18 @@ public class UsuarioDAO {
 
     public boolean existe(Usuario usuario) throws SQLException, IOException {
 
-        //connection do banco de dados para vereficar usuario.
-        Connection connection = DriverManager.getConnection( //
-                "jdbc:mysql://localhost:3306/onegames", //
-                "root", //
-                "");
-
-
+//        String sql = "select count(*) from usuario where Usuario = ? AND Senha = ?";
         String sql = "select count(*) from usuario " //
                 + "where Nome = '" + usuario.usuario + "' " //
                 + "AND Senha = '" + usuario.senha + "'";
 
-        ResultSet resultado = connection.createStatement().executeQuery(sql);
-        resultado.next();
-        int quantidadeUsuarios = resultado.getInt(1);
 
-        if (quantidadeUsuarios > 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);) {
+            preparedStatement.setString(1, usuario.usuario);
+            preparedStatement.setString(2, usuario.senha);
 
-    public boolean novousuario(Usuario novousuario) throws SQLException {
 
-        String sql = "insert into usuario( Usuario_id,Nome, Senha) values (?,?,?);";
-
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);){
-            preparedStatement.setInt(1,novousuario.codigo);
-            preparedStatement.setString(2, novousuario.usuario);
-            preparedStatement.setString(3, novousuario.senha);
-
-            try(ResultSet resultado = preparedStatement.executeQuery();){
+            try (ResultSet resultado = preparedStatement.executeQuery();) {
                 resultado.next();
                 int quantidadeUsuarios = resultado.getInt(1);
 
@@ -47,11 +27,30 @@ public class UsuarioDAO {
                     return true;
                 }
                 else{
-                    return  false;
+                    return false;
                 }
             }
         }
     }
 
 
-}
+        public boolean novousuario(Usuario novousuario1) throws SQLException {
+
+            String sql = "insert into usuario( Usuario_id,Nome, Senha) values (?,?,?);";
+
+            try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);) {
+                preparedStatement.setInt(1, novousuario1.codigo);
+                preparedStatement.setString(2, novousuario1.usuario);
+                preparedStatement.setString(3, novousuario1.senha);
+
+
+                try (ResultSet resultado = preparedStatement.executeQuery();) {
+                    resultado.next();
+                    int quantidadeUsuarios = resultado.getInt(1);
+
+
+                }
+            }
+            return false;
+        }
+    }
