@@ -5,9 +5,7 @@ import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Group;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.paint.Color;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -27,7 +25,7 @@ public class ValorantController extends Application implements Initializable {
 
     public void start(Stage stage) {
 
-        String text = "";
+        String text = "awdasdwew1232132132313wdasdasd dadsdawdasdawdsd wdasd1232123 d123d12312d 223d12dsd11d12d12d213ddsd fw3edfwd dawdw213213123 1312 dad 12e1";
 
         Label label = new Label(text);
         System.out.println(text);
@@ -42,7 +40,7 @@ public class ValorantController extends Application implements Initializable {
         label.setTranslateY(25);
         Group root = new Group();
         root.getChildren().add(label);
-        //Setting the stage
+//        Setting the stage
 //        Scene scene = new Scene(root, 595, 150, Color.BEIGE);
 //        stage.setTitle("Onegames");
 //        stage.setScene(scene);

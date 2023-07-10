@@ -8,11 +8,8 @@ public class UsuarioDAO {
 
     public boolean existe(Usuario usuario) throws SQLException, IOException {
 
-//        String sql = "select count(*) from usuario where Usuario = ? AND Senha = ?";
-        String sql = "select count(*) from usuario " //
-                + "where Nome = '" + usuario.usuario + "' " //
-                + "AND Senha = '" + usuario.senha + "'";
 
+        String sql = "select count(*) from usuario where Nome = ? AND Senha = ?";
 
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);) {
             preparedStatement.setString(1, usuario.usuario);
@@ -36,18 +33,16 @@ public class UsuarioDAO {
 
         public boolean novousuario(Usuario novousuario1) throws SQLException {
 
-            String sql = "insert into usuario( Usuario_id,Nome, Senha) values (?,?,?);";
+            String sql = "INSERT INTO onegames.usuario (Nome, Senha) VALUES (?,?);";
 
             try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);) {
-                preparedStatement.setInt(1, novousuario1.codigo);
-                preparedStatement.setString(2, novousuario1.usuario);
-                preparedStatement.setString(3, novousuario1.senha);
+                preparedStatement.setString(1, novousuario1.usuario);
+                preparedStatement.setString(2, novousuario1.senha);
 
 
                 try (ResultSet resultado = preparedStatement.executeQuery();) {
                     resultado.next();
                     int quantidadeUsuarios = resultado.getInt(1);
-
 
                 }
             }

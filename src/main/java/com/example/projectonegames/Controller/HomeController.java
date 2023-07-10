@@ -31,7 +31,7 @@ public class HomeController {
         }
 
         public void fifa() throws IOException {
-            HelloApplication.setRoot("fifa-view");
+            HelloApplication.setRoot("FIFA-view");
         }
 
         @FXML

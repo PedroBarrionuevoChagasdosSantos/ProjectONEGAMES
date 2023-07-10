@@ -41,7 +41,7 @@
             </ImageInput>
          </effect>
       </Button>
-      <Button layoutX="461.0" layoutY="77.0" mnemonicParsing="false" opacity="0.7" prefHeight="446.0" prefWidth="242.0">
+      <Button layoutX="461.0" layoutY="77.0" mnemonicParsing="false" onAction="#fifa" opacity="0.7" prefHeight="446.0" prefWidth="242.0">
          <effect>
             <ImageInput>
                <source>

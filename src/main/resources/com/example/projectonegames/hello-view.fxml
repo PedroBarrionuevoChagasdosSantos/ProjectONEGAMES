@@ -13,7 +13,7 @@
    <children>
       <Label prefHeight="70.0" prefWidth="950.0" style="-fx-background-color: #cd0000;" textFill="#cd0000" />
       <Label layoutY="530.0" prefHeight="70.0" prefWidth="950.0" style="-fx-background-color: #cd0000;" textFill="#cd0000" />
-      <TextField fx:id="usuariofield" layoutX="353.0" layoutY="359.0" prefHeight="31.0" prefWidth="246.0" promptText="Usuario">
+      <TextField fx:id="usuariofield" layoutX="354.0" layoutY="360.0" prefHeight="31.0" prefWidth="246.0" promptText="Usuario">
          <font>
             <Font size="15.0" />
          </font>
