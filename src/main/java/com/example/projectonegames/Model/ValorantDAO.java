@@ -7,13 +7,12 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ValorantDAO {
-    public Jogos Valorant() throws SQLException {
+    public static Jogos Valorant() throws SQLException {
 
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  1;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
 
         }
-
         return null;
     }
 }

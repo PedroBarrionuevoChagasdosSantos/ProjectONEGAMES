@@ -19,7 +19,7 @@
             <Font name="Bell MT" size="40.0" />
          </font>
       </Label>
-      <Label fx:id="labelTexto" alignment="TOP_LEFT" layoutX="24.0" layoutY="152.0" prefHeight="262.0" prefWidth="897.0" textFill="WHITE">
+      <Label fx:id="labelTexto" alignment="TOP_LEFT" layoutX="24.0" layoutY="152.0" prefHeight="262.0" prefWidth="897.0" text="fyfyfyfgyfyf" textFill="WHITE">
          <font>
             <Font name="Bell MT" size="26.0" />
          </font>
