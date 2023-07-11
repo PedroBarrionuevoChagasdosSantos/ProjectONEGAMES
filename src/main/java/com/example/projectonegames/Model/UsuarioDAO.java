@@ -10,12 +10,9 @@ public class UsuarioDAO {
 
     public boolean existe(Usuario usuario) throws SQLException, IOException {
 
-<<<<<<< Updated upstream
 
         String sql = "select count(*) from usuario where Nome = ? AND Senha = ?";
-=======
-         String sql = "select count(*) from usuario where Usuario = ? AND Senha = ?";
->>>>>>> Stashed changes
+
 
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);) {
             preparedStatement.setString(1, usuario.usuario);
@@ -37,7 +34,6 @@ public class UsuarioDAO {
     }
 
 
-<<<<<<< Updated upstream
         public boolean novousuario(Usuario novousuario1) throws SQLException {
 
             String sql = "INSERT INTO onegames.usuario (Nome, Senha) VALUES (?,?);";
@@ -55,7 +51,7 @@ public class UsuarioDAO {
             }
             return false;
         }
-=======
+
 //        public boolean novousuario(Usuario novousuario1) throws SQLException {
 //
 //            String sql = "insert into usuario( Usuario_id,Nome, Senha) values (?,?,?);";
@@ -75,5 +71,4 @@ public class UsuarioDAO {
 //            }
 //            return false;
 //        }
->>>>>>> Stashed changes
     }
