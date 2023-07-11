@@ -10,8 +10,7 @@ public class ConnectionSingleton {
     public static Connection getConnection() throws SQLException {
 
         if (connection == null) {
-            connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/onegames", //
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/onegames", //
                     "root", //
                     "");
         }
