@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 
@@ -18,9 +19,17 @@ public class ValorantController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-            String text = "ADAWDAWDAWD ADAWDWEWE3123123 123213 DAWD WDQWD 2123 DASDWEW SD WDSDAWSDWD WDQWE1232DCSD EE122DASD23123 DAD123DS";
+        ValorantDAO valorantDAO = new ValorantDAO();
+        try {
+            String texto = valorantDAO.valorant();
+
             labelTexto.setWrapText(true);
-            labelTexto.setText(text);
+            labelTexto.setText(texto);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+
 
         }
 

@@ -4,16 +4,18 @@ import com.example.projectonegames.ConnectionSingleton;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.List;
 
 public class ValorantDAO {
-    public static Jogos Valorant() throws SQLException {
+    public String valorant() throws SQLException {
 
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  1;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
+                resultSet.next();
 
+            String texto = resultSet.getString(1);
+
+            return texto;
         }
-        return null;
     }
 }
 
