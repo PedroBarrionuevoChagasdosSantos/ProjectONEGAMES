@@ -51,24 +51,4 @@ public class UsuarioDAO {
             }
             return false;
         }
-
-//        public boolean novousuario(Usuario novousuario1) throws SQLException {
-//
-//            String sql = "insert into usuario( Usuario_id,Nome, Senha) values (?,?,?);";
-//
-//            try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);) {
-//                preparedStatement.setInt(1, novousuario1.codigo);
-//                preparedStatement.setString(2, novousuario1.usuario);
-//                preparedStatement.setString(3, novousuario1.senha);
-//
-//
-//                try (ResultSet resultado = preparedStatement.executeQuery();) {
-//                    resultado.next();
-//                    int quantidadeUsuarios = resultado.getInt(1);
-//
-//
-//                }
-//            }
-//            return false;
-//        }
     }

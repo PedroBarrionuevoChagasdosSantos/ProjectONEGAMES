@@ -18,7 +18,7 @@ public class ValorantDAO {
             return titulo;
         }
     }
-    public String valorant1() throws SQLException {
+    public String texto1() throws SQLException {
 
         try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  1;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -54,5 +54,19 @@ public class ValorantDAO {
             return titulo2;
         }
     }
+
+    public String texto2() throws SQLException {
+
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  2;");
+             ResultSet resultSet = preparedStatement.executeQuery()) {
+            resultSet.next();
+
+            String texto = resultSet.getString(1);
+
+            return texto;
+        }
+    }
+
+
 }
 
