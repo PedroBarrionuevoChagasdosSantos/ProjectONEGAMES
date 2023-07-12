@@ -36,7 +36,7 @@
                   </Label>
                   <Label fx:id="labelAutor1" layoutX="15.0" layoutY="225.0" prefHeight="28.0" prefWidth="335.0" text="Autor" textFill="RED">
                      <font>
-                        <Font name="Arial Narrow" size="20.0" />
+                        <Font name="Arial Narrow" size="16.0" />
                      </font>
                   </Label>
                   <Label fx:id="labelTexto2" alignment="TOP_LEFT" layoutX="15.0" layoutY="350.0" prefHeight="262.0" prefWidth="874.0" text="Text2">

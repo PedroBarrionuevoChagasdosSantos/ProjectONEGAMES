@@ -50,7 +50,7 @@
             </ImageInput>
          </effect>
       </Button>
-      <Button layoutX="722.0" layoutY="105.0" mnemonicParsing="false" opacity="0.7" prefHeight="390.0" prefWidth="221.0" text="Button">
+      <Button layoutX="722.0" layoutY="105.0" mnemonicParsing="false" onAction="#csgo" opacity="0.7" prefHeight="390.0" prefWidth="221.0" text="Button">
          <effect>
             <ImageInput>
                <source>
