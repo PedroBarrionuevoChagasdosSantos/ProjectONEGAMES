@@ -19,22 +19,22 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="749.0" prefWidth="895.0">
                <children>
-                  <Label fx:id="labelTitulo1" layoutX="15.0" prefHeight="51.0" prefWidth="865.0" text="t" textFill="RED">
+                  <Label fx:id="labelTitulo1" layoutX="15.0" prefHeight="51.0" prefWidth="865.0" text="t" textFill="RED" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="0.0">
                      <font>
                         <Font name="Arial Narrow" size="30.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelTexto1" alignment="TOP_LEFT" layoutX="15.0" layoutY="51.0" prefHeight="219.0" prefWidth="874.0" text="Text">
+                  <Label fx:id="labelTexto1" alignment="TOP_LEFT" layoutX="15.0" layoutY="51.0" prefHeight="219.0" prefWidth="874.0" text="Text" AnchorPane.bottomAnchor="479.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="51.0">
                      <font>
                         <Font name="Arial Narrow Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelData1" layoutX="15.0" layoutY="253.0" prefHeight="19.0" prefWidth="335.0" text="d" textFill="RED">
+                  <Label fx:id="labelData1" layoutX="15.0" layoutY="253.0" prefHeight="19.0" prefWidth="335.0" text="d" textFill="RED" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="545.0">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAutor1" layoutX="15.0" layoutY="225.0" prefHeight="28.0" prefWidth="335.0" text="Autor" textFill="RED">
+                  <Label fx:id="labelAutor1" layoutX="15.0" layoutY="225.0" prefHeight="28.0" prefWidth="335.0" text="Autor" textFill="RED" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
