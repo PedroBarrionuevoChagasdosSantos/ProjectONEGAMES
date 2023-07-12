@@ -24,37 +24,37 @@ public class ValorantController implements Initializable {
 
         ValorantDAO valorantDAO = new ValorantDAO();
         try {
-            String texto = valorantDAO.valorant1();
+            String texto1 = valorantDAO.valorant1();
 
             labelTexto.setWrapText(true);
-            labelTexto.setText(texto);
+            labelTexto.setText(texto1);
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
         try {
-            String titulo = valorantDAO.titulo1();
+            String titulo1 = valorantDAO.titulo1();
 
             labelTitulo.setWrapText(true);
-            labelTitulo.setText(titulo);
+            labelTitulo.setText(titulo1);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
         try {
-            String data = valorantDAO.data1();
+            String data1 = valorantDAO.data1();
 
             labelData.setWrapText(true);
-            labelData.setText(data);
+            labelData.setText(data1);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
         try {
-            String titulo = valorantDAO.titulo1();
+            String titulo2 = valorantDAO.titulo1();
 
             labelTitulo.setWrapText(true);
-            labelTitulo.setText(titulo);
+            labelTitulo.setText(titulo2);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
