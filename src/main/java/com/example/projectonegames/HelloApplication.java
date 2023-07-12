@@ -44,6 +44,7 @@ public class HelloApplication extends Application {
         modalDialog.initOwner(primaryStage);
         modalDialog.setScene(scene);
         modalDialog.showAndWait();
+        modalDialog.setResizable(true);
     }
 
     public static void main(String[] args) {

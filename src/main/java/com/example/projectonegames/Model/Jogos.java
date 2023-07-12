@@ -18,6 +18,7 @@ public class Jogos {
     public String titulo;
     public String texto;
     public String autor;
+
     public Date data;
 
 

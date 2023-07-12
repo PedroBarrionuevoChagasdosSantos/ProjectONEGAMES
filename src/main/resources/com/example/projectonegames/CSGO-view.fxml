@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,7 +12,7 @@
       <Label layoutY="551.0" prefHeight="49.0" prefWidth="956.0" style="-fx-background-color: #c60000;" />
       <ScrollPane layoutX="9.0" layoutY="51.0" prefHeight="495.0" prefWidth="937.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="761.0" prefWidth="921.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="761.0" prefWidth="919.0">
                <children>
                   <Label fx:id="labelTitulo1" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="43.0" prefWidth="878.0" text="Titulo" textFill="RED">
                      <font>
@@ -20,35 +21,35 @@
                   </Label>
                   <Label fx:id="labelTexto1" alignment="TOP_LEFT" layoutX="26.0" layoutY="57.0" prefHeight="258.0" prefWidth="884.0" text="Texto">
                      <font>
-                        <Font name="Arial Narrow" size="20.0" />
+                        <Font name="Arial Narrow Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAutor1" layoutX="26.0" layoutY="298.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
+                  <Label fx:id="labelAutor1" layoutX="26.0" layoutY="214.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
                      <font>
-                        <Font size="16.0" />
+                        <Font name="Arial Narrow" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelData1" layoutX="26.0" layoutY="331.0" prefHeight="25.0" prefWidth="94.0" text="Data" textFill="RED">
+                  <Label fx:id="labelData1" layoutX="24.0" layoutY="241.0" prefHeight="25.0" prefWidth="94.0" text="Data" textFill="RED">
                      <font>
-                        <Font size="16.0" />
+                        <Font name="Arial Narrow" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelTitulo2" alignment="TOP_LEFT" layoutX="14.0" layoutY="381.0" prefHeight="43.0" prefWidth="878.0" text="Titulo2" textFill="RED">
+                  <Label fx:id="labelTitulo2" alignment="TOP_LEFT" layoutX="14.0" layoutY="338.0" prefHeight="43.0" prefWidth="878.0" text="Titulo2" textFill="RED">
                      <font>
                         <Font name="Arial Narrow" size="30.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelTexto2" alignment="TOP_LEFT" layoutX="19.0" layoutY="424.0" prefHeight="258.0" prefWidth="884.0" text="Texto2">
+                  <Label fx:id="labelTexto2" alignment="TOP_LEFT" layoutX="18.0" layoutY="381.0" prefHeight="258.0" prefWidth="884.0" text="Texto2">
                      <font>
-                        <Font name="Arial Narrow" size="20.0" />
+                        <Font name="Arial Narrow Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAutor2" layoutX="19.0" layoutY="635.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
+                  <Label fx:id="labelAutor2" layoutX="21.0" layoutY="588.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelData2" layoutX="19.0" layoutY="662.0" prefHeight="25.0" prefWidth="103.0" text="Data" textFill="RED">
+                  <Label fx:id="labelData2" layoutX="20.0" layoutY="615.0" prefHeight="25.0" prefWidth="103.0" text="Data" textFill="RED">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -57,5 +58,10 @@
             </AnchorPane>
         </content>
       </ScrollPane>
+      <Button layoutX="860.0" layoutY="563.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: #909090;" text="Voltar" textFill="#030000">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
