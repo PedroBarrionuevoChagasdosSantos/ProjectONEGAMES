@@ -61,10 +61,17 @@ public class ValorantController implements Initializable {
         }
 
         try {
+
             String autor1 = valorantDAO.autor1();
 
             labelAutor1.setWrapText(true);
             labelAutor1.setText(autor1);
+
+            String titulo2 = valorantDAO.titulo1();
+
+            labelTitulo.setWrapText(true);
+            labelTitulo.setText(titulo2);
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
