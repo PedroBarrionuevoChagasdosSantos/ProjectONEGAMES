@@ -19,11 +19,15 @@ public class ValorantController implements Initializable {
     @FXML
     Label labelData1;
     @FXML
+    Label labelAutor1;
+    @FXML
     Label labelTitulo2;
     @FXML
     Label labelTexto2;
     @FXML
     Label labelData2;
+    @FXML
+    Label labelAutor2;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -57,6 +61,17 @@ public class ValorantController implements Initializable {
         }
 
         try {
+            String autor1 = valorantDAO.autor1();
+
+            labelAutor1.setWrapText(true);
+            labelAutor1.setText(autor1);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        ////////////////////////////////////////////////
+
+        try {
             String titulo2 = valorantDAO.titulo2();
 
             labelTitulo2.setWrapText(true);
@@ -76,10 +91,19 @@ public class ValorantController implements Initializable {
         }
 
         try {
-            String data2 = valorantDAO.data1();
+            String data2 = valorantDAO.data2();
 
             labelData2.setWrapText(true);
             labelData2.setText(data2);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        try {
+            String autor2 = valorantDAO.autor2();
+
+            labelAutor2.setWrapText(true);
+            labelAutor2.setText(autor2);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

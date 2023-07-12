@@ -9,17 +9,17 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectonegames.Controller.HomeController">
    <children>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="435.0" mnemonicParsing="false" onAction="#jogosmaisjogados" prefHeight="31.0" prefWidth="204.0" style="-fx-background-color: #909090;" text="Jogos mais jogados">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="411.0" mnemonicParsing="false" onAction="#jogosmaisjogados" prefHeight="52.0" prefWidth="214.0" style="-fx-background-color: #909090;" text="Jogos mais jogados">
          <font>
-            <Font name="Arial Rounded MT Bold" size="12.0" />
+            <Font name="Arial Rounded MT Bold" size="18.0" />
          </font></Button>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="272.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#jogoscommelhoresavaliações" prefHeight="31.0" prefWidth="204.0" style="-fx-background-color: #909090;" text="Jogos com melhores avaliações">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="274.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#jogoscommelhoresavaliações" prefHeight="52.0" prefWidth="214.0" style="-fx-background-color: #909090;" text="Melhores avaliações">
          <font>
-            <Font name="Arial Rounded MT Bold" size="12.0" />
+            <Font name="Arial Rounded MT Bold" size="18.0" />
          </font></Button>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="128.0" mnemonicParsing="false" onAction="#jogosmaisbaixados" prefHeight="31.0" prefWidth="204.0" style="-fx-background-color: #909090;" text="Jogos mais baixados">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="3.0" layoutY="128.0" mnemonicParsing="false" onAction="#jogosmaisbaixados" prefHeight="52.0" prefWidth="214.0" style="-fx-background-color: #909090;" text="Jogos mais baixados">
          <font>
-            <Font name="Arial Rounded MT Bold" size="12.0" />
+            <Font name="Arial Rounded MT Bold" size="18.0" />
          </font></Button>
       <Label layoutX="-1.0" layoutY="-1.0" prefHeight="52.0" prefWidth="950.0" style="-fx-background-color: #b90000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
       <Label layoutY="548.0" prefHeight="52.0" prefWidth="950.0" style="-fx-background-color: #b90000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
@@ -32,7 +32,7 @@
             <Font name="Arial Rounded MT Bold" size="28.0" />
          </font>
       </Label>
-      <Button layoutX="213.0" layoutY="105.0" mnemonicParsing="false" onAction="#valorant" opacity="0.7" prefHeight="390.0" prefWidth="242.0">
+      <Button layoutX="225.0" layoutY="105.0" mnemonicParsing="false" onAction="#valorant" opacity="0.7" prefHeight="390.0" prefWidth="242.0">
          <effect>
             <ImageInput>
                <source>
@@ -41,7 +41,7 @@
             </ImageInput>
          </effect>
       </Button>
-      <Button layoutX="461.0" layoutY="77.0" mnemonicParsing="false" onAction="#fifa" opacity="0.7" prefHeight="446.0" prefWidth="242.0">
+      <Button layoutX="467.0" layoutY="77.0" mnemonicParsing="false" onAction="#fifa" opacity="0.7" prefHeight="446.0" prefWidth="242.0">
          <effect>
             <ImageInput>
                <source>
