@@ -29,12 +29,12 @@
                         <Font name="Arial Rounded MT Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAutor1" layoutX="14.0" layoutY="274.0" prefHeight="26.0" prefWidth="402.0" text="Autor" textFill="RED">
+                  <Label fx:id="labelAutor1" layoutX="14.0" layoutY="297.0" prefHeight="26.0" prefWidth="402.0" text="Autor" textFill="RED">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelData1" layoutX="13.0" layoutY="300.0" prefHeight="17.0" prefWidth="117.0" text="Data" textFill="RED">
+                  <Label fx:id="labelData1" layoutX="13.0" layoutY="323.0" prefHeight="17.0" prefWidth="117.0" text="Data" textFill="RED">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
@@ -49,12 +49,12 @@
                         <Font name="Arial Rounded MT Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAutor2" layoutX="14.0" layoutY="605.0" prefHeight="26.0" prefWidth="402.0" text="Autor" textFill="RED">
+                  <Label fx:id="labelAutor2" layoutX="14.0" layoutY="653.0" prefHeight="26.0" prefWidth="402.0" text="Autor" textFill="RED">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelData2" layoutX="13.0" layoutY="631.0" prefHeight="17.0" prefWidth="117.0" text="Data" textFill="RED">
+                  <Label fx:id="labelData2" layoutX="13.0" layoutY="679.0" prefHeight="17.0" prefWidth="117.0" text="Data" textFill="RED">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
