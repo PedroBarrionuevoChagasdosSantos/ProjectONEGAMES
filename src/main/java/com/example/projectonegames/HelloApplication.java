@@ -24,6 +24,7 @@ public class HelloApplication extends Application {
         stage.setTitle("Onegames");
         stage.setScene(scene);
         stage.setMaximized(false);
+        stage.setResizable(false);
         stage.show();
     }
 

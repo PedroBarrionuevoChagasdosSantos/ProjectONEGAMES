@@ -34,6 +34,10 @@ public class HomeController {
             HelloApplication.setRoot("FIFA-view");
         }
 
+        public void csgo() throws IOException {
+            HelloApplication.setRoot("CSGO-view");
+        }
+
         @FXML
         public void sairparalogin() throws  IOException{
             HelloApplication.setRoot("hello-view");

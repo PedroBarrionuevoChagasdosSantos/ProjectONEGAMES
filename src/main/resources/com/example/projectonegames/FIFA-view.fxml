@@ -2,12 +2,66 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectonegames.Controller.FIFAController">
    <children>
       <Label layoutY="-1.0" prefHeight="50.0" prefWidth="953.0" style="-fx-background-color: #c60000;" textFill="#c60000" />
       <Label layoutY="550.0" prefHeight="50.0" prefWidth="953.0" style="-fx-background-color: #c60000;" textFill="#c60000" />
-      <Button layoutX="845.0" layoutY="563.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="23.0" prefWidth="65.0" style="-fx-background-color: #909090;" text="Voltar" />
+      <Button layoutX="828.0" layoutY="558.0" mnemonicParsing="false" onAction="#Voltar" prefHeight="34.0" prefWidth="117.0" style="-fx-background-color: #909090;" text="Voltar">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></Button>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <ScrollPane layoutX="9.0" layoutY="57.0" prefHeight="484.0" prefWidth="936.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="756.0" prefWidth="931.0">
+               <children>
+                  <Label fx:id="labelTitulo1" layoutX="14.0" layoutY="9.0" prefHeight="50.0" prefWidth="888.0" text="Titulo" textFill="RED">
+                     <font>
+                        <Font name="Arial Narrow" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelTexto1" alignment="TOP_LEFT" layoutX="13.0" layoutY="59.0" prefHeight="251.0" prefWidth="891.0" text="Texto">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelAutor1" layoutX="14.0" layoutY="294.0" prefHeight="26.0" prefWidth="402.0" text="Autor" textFill="RED">
+                     <font>
+                        <Font name="Arial Narrow" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelData1" layoutX="13.0" layoutY="326.0" prefHeight="17.0" prefWidth="117.0" text="Data" textFill="RED">
+                     <font>
+                        <Font name="Arial Narrow" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelTitulo2" layoutX="13.0" layoutY="378.0" prefHeight="50.0" prefWidth="888.0" text="Titulo" textFill="RED">
+                     <font>
+                        <Font name="Arial Narrow" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelTexto2" alignment="TOP_LEFT" layoutX="13.0" layoutY="428.0" prefHeight="251.0" prefWidth="891.0" text="Texto">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelAutor2" layoutX="14.0" layoutY="627.0" prefHeight="26.0" prefWidth="402.0" text="Autor" textFill="RED">
+                     <font>
+                        <Font name="Arial Narrow" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelData2" layoutX="13.0" layoutY="653.0" prefHeight="17.0" prefWidth="117.0" text="Data" textFill="RED">
+                     <font>
+                        <Font name="Arial Narrow" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

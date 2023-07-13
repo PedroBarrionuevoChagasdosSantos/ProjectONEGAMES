@@ -1,15 +1,16 @@
 package com.example.projectonegames.Model;
 
 import com.example.projectonegames.ConnectionSingleton;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ValorantDAO {
+public class FIFADAO {
 
     public String titulo1() throws SQLException {
 
-        try(PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo from noticias where Noticias_id =  1;");
+        try(PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo from noticias where Noticias_id =  5;");
             ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
 
@@ -18,20 +19,22 @@ public class ValorantDAO {
             return titulo;
         }
     }
+
     public String texto1() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  1;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  5;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
-                resultSet.next();
+            resultSet.next();
 
             String texto = resultSet.getString(1);
 
             return texto;
         }
     }
+
     public String data1() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Data from noticias where Noticias_id =  1;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Data from noticias where Noticias_id =  5;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
 
@@ -43,7 +46,7 @@ public class ValorantDAO {
 
     public String autor1() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Autor from noticias where Noticias_id =  1;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Autor from noticias where Noticias_id =  5;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
 
@@ -52,25 +55,23 @@ public class ValorantDAO {
             return autor;
         }
     }
-
-    ////////////////////////////////////////////////////////////////
-
+    //////////////////////////////////////////////////////////
 
     public String titulo2() throws SQLException {
 
-        try(PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo from noticias where Noticias_id =  2;");
+        try(PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Titulo from noticias where Noticias_id =  6;");
             ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
 
-            String titulo2 = resultSet.getString(1);
+            String titulo = resultSet.getString(1);
 
-            return titulo2;
+            return titulo;
         }
     }
 
     public String texto2() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  2;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select texto from noticias where Noticias_id =  6;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
 
@@ -82,7 +83,7 @@ public class ValorantDAO {
 
     public String data2() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Data from noticias where Noticias_id =  2;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Data from noticias where Noticias_id =  6;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
 
@@ -94,7 +95,7 @@ public class ValorantDAO {
 
     public String autor2() throws SQLException {
 
-        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Autor from noticias where Noticias_id =  2;");
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement("select Autor from noticias where Noticias_id = 6;");
              ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
 
@@ -104,6 +105,4 @@ public class ValorantDAO {
         }
     }
 
-
 }
-
