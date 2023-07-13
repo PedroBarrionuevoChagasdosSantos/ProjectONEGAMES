@@ -1,12 +1,9 @@
 package com.example.projectonegames.Controller;
-
 import com.example.projectonegames.HelloApplication;
 import com.example.projectonegames.Model.ValorantDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.control.Labeled;
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -84,7 +81,7 @@ public class ValorantController implements Initializable {
 
             labelTitulo2.setWrapText(true);
             labelTitulo2.setText(titulo2);
-            
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
