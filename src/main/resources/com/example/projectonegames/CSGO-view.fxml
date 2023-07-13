@@ -24,12 +24,12 @@
                         <Font name="Arial Narrow Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAutor1" layoutX="26.0" layoutY="214.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
+                  <Label fx:id="labelAutor1" layoutX="22.0" layoutY="263.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelData1" layoutX="24.0" layoutY="241.0" prefHeight="25.0" prefWidth="94.0" text="Data" textFill="RED">
+                  <Label fx:id="labelData1" layoutX="25.0" layoutY="290.0" prefHeight="25.0" prefWidth="94.0" text="Data" textFill="RED">
                      <font>
                         <Font name="Arial Narrow" size="16.0" />
                      </font>
@@ -44,12 +44,12 @@
                         <Font name="Arial Narrow Bold" size="20.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelAutor2" layoutX="21.0" layoutY="588.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
+                  <Label fx:id="labelAutor2" layoutX="14.0" layoutY="649.0" prefHeight="27.0" prefWidth="203.0" text="Autor" textFill="RED">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label fx:id="labelData2" layoutX="20.0" layoutY="615.0" prefHeight="25.0" prefWidth="103.0" text="Data" textFill="RED">
+                  <Label fx:id="labelData2" layoutX="14.0" layoutY="670.0" prefHeight="25.0" prefWidth="103.0" text="Data" textFill="RED">
                      <font>
                         <Font size="16.0" />
                      </font>
