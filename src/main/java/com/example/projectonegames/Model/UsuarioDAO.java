@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class UsuarioDAO {
 
@@ -25,8 +26,7 @@ public class UsuarioDAO {
 
                 if (quantidadeUsuarios > 0) {
                     return true;
-                }
-                else{
+                } else {
                     return false;
                 }
             }
@@ -34,21 +34,19 @@ public class UsuarioDAO {
     }
 
 
-        public boolean novousuario(Usuario novousuario1) throws SQLException {
+    public void novousuario(Usuario novousuario) throws SQLException {
 
-            String sql = "INSERT INTO onegames.usuario (Nome, Senha) VALUES (?,?);";
+        String sql = "INSERT INTO onegames.usuario (Nome, Senha) VALUES (?,?);";
+        try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            preparedStatement.setString(1, novousuario.usuario);
+            preparedStatement.setString(2, novousuario.senha);
+            preparedStatement.execute();
 
-            try (PreparedStatement preparedStatement = ConnectionSingleton.getConnection().prepareStatement(sql);) {
-                preparedStatement.setString(1, novousuario1.usuario);
-                preparedStatement.setString(2, novousuario1.senha);
+            try (ResultSet resultSet = preparedStatement.getGeneratedKeys();) {
+                resultSet.next();
+                novousuario.codigo = resultSet.getInt(1);
 
-
-                try (ResultSet resultado = preparedStatement.executeQuery();) {
-                    resultado.next();
-                    int quantidadeUsuarios = resultado.getInt(1);
-
-                }
             }
-            return false;
         }
     }
+}

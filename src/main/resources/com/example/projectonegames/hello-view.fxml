@@ -23,13 +23,13 @@
             <Font size="15.0" />
          </font>
       </PasswordField>
-      <Button layoutX="438.0" layoutY="475.0" mnemonicParsing="false" onAction="#entrar" prefHeight="31.0" prefWidth="77.0" text="Entrar">
+      <Button layoutX="438.0" layoutY="475.0" mnemonicParsing="false" onAction="#entrar" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: #838383;" text="Entrar">
          <font>
-            <Font size="15.0" />
+            <Font name="Arial Narrow Bold" size="15.0" />
          </font></Button>
-      <AnchorPane layoutX="191.0" layoutY="92.0" prefHeight="200.0" prefWidth="540.0">
+      <AnchorPane layoutX="196.0" layoutY="86.0" prefHeight="243.0" prefWidth="548.0">
          <children>
-            <ImageView fitHeight="207.0" fitWidth="430.0" layoutX="63.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="212.0" fitWidth="437.0" layoutX="62.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Logo%20Vermelho%20(OneGames).png" />
                </image>
@@ -45,6 +45,9 @@
       <Label layoutX="353.0" layoutY="401.0" prefHeight="17.0" prefWidth="102.0" text="Insira sua senha:" textFill="WHITE" />
       <Label layoutX="452.0" layoutY="336.0" prefHeight="17.0" prefWidth="18.0" text="*" textFill="#eb0000" />
       <Label layoutX="443.0" layoutY="401.0" prefHeight="17.0" prefWidth="18.0" text="*" textFill="#eb0000" />
-      <Button layoutX="842.0" layoutY="27.0" mnemonicParsing="false" onAction="#criarlogin" prefHeight="31.0" prefWidth="77.0" text="Criar login" />
+      <Button layoutX="834.0" layoutY="26.0" mnemonicParsing="false" onAction="#criarlogin" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #838383;" text="Criar login">
+         <font>
+            <Font name="Arial Narrow Bold" size="16.0" />
+         </font></Button>
    </children>
 </AnchorPane>

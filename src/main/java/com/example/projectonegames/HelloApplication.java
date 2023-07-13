@@ -11,7 +11,7 @@ import javafx.stage.Window;
 import java.io.IOException;
 //OLA GALERAAA
 // Olá
-//
+//Marlon
 
 public class HelloApplication extends Application {
     private static Scene scene;
@@ -44,6 +44,7 @@ public class HelloApplication extends Application {
         modalDialog.initOwner(primaryStage);
         modalDialog.setScene(scene);
         modalDialog.showAndWait();
+        modalDialog.setResizable(true);
     }
 
     public static void main(String[] args) {

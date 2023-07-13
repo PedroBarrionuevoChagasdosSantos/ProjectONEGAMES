@@ -5,6 +5,8 @@ import com.example.projectonegames.Model.ValorantDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.Labeled;
+
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -42,12 +44,10 @@ public class ValorantController implements Initializable {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+
+
         try {
             String titulo1 = valorantDAO.titulo1();
-
-
-            labelTitulo1.setWrapText(true);
-            labelTitulo1.setText(titulo1);
 
             labelTitulo1.setWrapText(true);
             labelTitulo1.setText(titulo1);
@@ -62,16 +62,12 @@ public class ValorantController implements Initializable {
             labelData1.setWrapText(true);
             labelData1.setText(data1);
 
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
         try {
-            String titulo2 = valorantDAO.titulo1();
-
-            labelTitulo1.setWrapText(true);
-            labelTitulo1.setText(titulo2);
-
             String autor1 = valorantDAO.autor1();
 
             labelAutor1.setWrapText(true);
@@ -88,6 +84,7 @@ public class ValorantController implements Initializable {
 
             labelTitulo2.setWrapText(true);
             labelTitulo2.setText(titulo2);
+            
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
