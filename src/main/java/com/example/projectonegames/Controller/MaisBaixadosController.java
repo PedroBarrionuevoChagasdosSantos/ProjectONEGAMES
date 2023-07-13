@@ -9,6 +9,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
@@ -16,7 +17,9 @@ import java.util.ResourceBundle;
 
 public class MaisBaixadosController implements Initializable {
 
-        @FXML
+    private static Jogos jogos;
+
+    @FXML
         TableView<Jogos> tabelaMaisBaixados;
 
         @FXML
