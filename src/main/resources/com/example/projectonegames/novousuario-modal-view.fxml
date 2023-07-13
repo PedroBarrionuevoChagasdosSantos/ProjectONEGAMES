@@ -20,7 +20,7 @@
       </Label>
       <TextField fx:id="usuariofield" layoutX="110.0" layoutY="294.0" prefHeight="41.0" prefWidth="231.0" promptText="Usuario" />
       <PasswordField fx:id="senhafield" layoutX="110.0" layoutY="367.0" prefHeight="41.0" prefWidth="231.0" promptText="Senha" />
-      <Button layoutX="110.0" layoutY="433.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #838383;" text="Cadastrar">
+      <Button layoutX="110.0" layoutY="433.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: #838383;" text="Cadastrar">
          <font>
             <Font name="Arial Narrow Bold" size="16.0" />
          </font></Button>
@@ -44,7 +44,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Button layoutX="211.0" layoutY="433.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #838383;" text="Cancelar">
+      <Button layoutX="233.0" layoutY="433.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #838383;" text="Cancelar">
          <font>
             <Font name="Arial Narrow Bold" size="16.0" />
          </font></Button>

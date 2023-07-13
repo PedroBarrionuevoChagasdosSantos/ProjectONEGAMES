@@ -23,7 +23,7 @@
             <Font size="15.0" />
          </font>
       </PasswordField>
-      <Button layoutX="438.0" layoutY="475.0" mnemonicParsing="false" onAction="#entrar" prefHeight="31.0" prefWidth="77.0" style="-fx-background-color: #838383;" text="Entrar">
+      <Button layoutX="426.0" layoutY="469.0" mnemonicParsing="false" onAction="#entrar" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #838383;" text="Entrar">
          <font>
             <Font name="Arial Narrow Bold" size="15.0" />
          </font></Button>
@@ -45,7 +45,7 @@
       <Label layoutX="353.0" layoutY="401.0" prefHeight="17.0" prefWidth="102.0" text="Insira sua senha:" textFill="WHITE" />
       <Label layoutX="452.0" layoutY="336.0" prefHeight="17.0" prefWidth="18.0" text="*" textFill="#eb0000" />
       <Label layoutX="443.0" layoutY="401.0" prefHeight="17.0" prefWidth="18.0" text="*" textFill="#eb0000" />
-      <Button layoutX="834.0" layoutY="26.0" mnemonicParsing="false" onAction="#criarlogin" prefHeight="31.0" prefWidth="92.0" style="-fx-background-color: #838383;" text="Criar login">
+      <Button layoutX="806.0" layoutY="20.0" mnemonicParsing="false" onAction="#criarlogin" prefHeight="37.0" prefWidth="120.0" style="-fx-background-color: #838383;" text="Criar login">
          <font>
             <Font name="Arial Narrow Bold" size="16.0" />
          </font></Button>
